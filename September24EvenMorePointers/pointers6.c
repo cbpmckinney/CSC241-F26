@@ -4,8 +4,13 @@
 int main(int argc, char * argv[])
 {
     printf("argc is %i\n", argc);
-    printf("argv[0] is %s\n", argv[0]);
-    printf("argv[1] is %s\n", argv[1]);
+
+    for (int i = 0; i < argc; i++)
+    {
+        printf("argv[%i] is %s\n", i, argv[i]);
+    }
+    //printf("argv[0] is %s\n", argv[0]);
+    //printf("argv[1] is %s\n", argv[1]);
 
 
 
