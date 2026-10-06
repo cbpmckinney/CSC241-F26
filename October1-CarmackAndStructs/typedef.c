@@ -4,15 +4,15 @@
 int main(void)
 {
 
-    struct Student
+    typedef struct
     {
         char firstname[32];
         char lastname[32];
         int year;
         float gpa;
-    };
+    } Student;
 
-    struct Student student1;
+    Student student1;
     
     student1.year = 2029;
     student1.gpa = 4.0F;
@@ -24,7 +24,7 @@ int main(void)
     printf("student1 is stored at: %p\n", &student1);
 
 
-    struct Student * ptr = &student1;
+    Student * ptr = &student1;
 
     printf("student1 has GPA %i\n", ptr->year);
 
